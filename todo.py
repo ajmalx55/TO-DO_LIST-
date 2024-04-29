@@ -48,20 +48,20 @@ class todo:
                 f.truncate()
             self.main_text.delete(delete)
 
-            with open('data.txt', 'r') as file:
+          with open('data.txt', 'r') as file:
                 read = file.readlines()
                 for i in read:
                     ready = i.split()
                 self.main_text.insert(END, ready)
-            file.close()
+          file.close()
 
-        self.button = Button(self.root, text="Add",font='sarif, 20 bold italic', 
+          self.button = Button(self.root, text="Add",font='sarif, 20 bold italic', 
                          width=10,bd=5, bg='orange', fg='black', command = add)
-        self.button.place(x=30, y=180) 
+          self.button.place(x=30, y=180) 
 
-        self.button2 = Button(self.root, text="Delete", 
+          self.button2 = Button(self.root, text="Delete", 
                       font='sarif, 20 bold italic', width=10,bd=5, bg='orange', fg = 'black', command = delete) 
-        self.button2.place(x=30, y=280)
+          self.button2.place(x=30, y=280)
 
 
 def main():
