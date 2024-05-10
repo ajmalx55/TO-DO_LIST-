@@ -52,7 +52,7 @@ class todo:
                 read = file.readlines()
                 for i in read:
                     ready = i.split()
-                self.main_text.insert(END, ready)
+                    self.main_text.insert(END, ready)
         file.close()
 
         self.button = Button(self.root, text="Add",font='sarif, 20 bold italic', 
