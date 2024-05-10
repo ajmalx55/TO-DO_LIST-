@@ -1,7 +1,7 @@
 # 📝 To-Do List Application using Tkinter
 
 ## 🚀 Overview
-This project is a simple To-Do List application built using Tkinter, a standard GUI (Graphical User Interface) toolkit for Python. The application allows users to add tasks, view existing tasks, and delete completed tasks.
+This project is a simple To-Do List application built using Tkinter, a standard GUI (Graphical User Interface) toolkit for Python. The application allows users to add tasks, view existing tasks, and delete completed tasks..
 
 ## ✨ Features
 - **Add Task**: Users can input tasks in the provided text box and click the "Add" button to append them to the list.
@@ -26,6 +26,7 @@ This project is a simple To-Do List application built using Tkinter, a standard 
 
 ## About Me
 Undergrad IT Student | Learning ML and Web Development 👨‍💻🙌
+Lets connect and Know More!
 
 ## Authors
 - [Ajmal](https://github.com/ajmalx55)
