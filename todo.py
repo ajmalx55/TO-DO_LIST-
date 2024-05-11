@@ -45,12 +45,12 @@ class Todo:
         # Function to mark a task as completed
         def mark_as_completed():
             selected = self.main_text.curselection()
-            self.main_text.itemconfig(selected, {'bg': 'light green', 'fg': 'black'})
+            self.main_text.itemconfig(selected, {'bg': 'orange', 'fg': 'black'})
 
         # Function to delete all completed tasks
         def delete_completed_tasks():
             for i in range(self.main_text.size()):
-                if self.main_text.itemcget(i, 'bg') == 'light green':
+                if self.main_text.itemcget(i, 'bg') == 'orange':
                     self.main_text.delete(i)
             with open('data.txt', 'r+') as f:
                 lines = f.readlines()
@@ -76,13 +76,13 @@ class Todo:
         self.button_delete = Button(self.root, text="Delete", font='Arial 20 bold italic', width=10, bd=5, bg='orange', fg='black', command=delete_task)
         self.button_delete.place(x=30, y=280)
 
-        self.button_completed = Button(self.root, text="Mark as Completed", font='Arial 16 bold italic', width=18, bd=5, bg='light green', fg='black', command=mark_as_completed)
+        self.button_completed = Button(self.root, text="Mark as Completed", font='Arial 16 bold italic', width=18, bd=5, bg='orange', fg='black', command=mark_as_completed)
         self.button_completed.place(x=20, y=330)
 
-        self.button_delete_completed = Button(self.root, text="Delete Completed", font='Arial 16 bold italic', width=18, bd=5, bg='light green', fg='black', command=delete_completed_tasks)
+        self.button_delete_completed = Button(self.root, text="Delete Completed", font='Arial 16 bold italic', width=18, bd=5, bg='orange', fg='black', command=delete_completed_tasks)
         self.button_delete_completed.place(x=20, y=380)
 
-        self.button_clear_all = Button(self.root, text="Clear All Tasks", font='Arial 16 bold italic', width=18, bd=5, bg='light green', fg='black', command=clear_all_tasks)
+        self.button_clear_all = Button(self.root, text="Clear All Tasks", font='Arial 16 bold italic', width=18, bd=5, bg='orange', fg='black', command=clear_all_tasks)
         self.button_clear_all.place(x=420, y=330)
 
 
